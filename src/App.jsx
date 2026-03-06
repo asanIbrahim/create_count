@@ -10,7 +10,7 @@ function App() {
     <>
       <h5>Welcome Count Project </h5>
       <h4>{count} </h4>
-      <button onClick={() => dispatch(increment())}>
+      <button onClick={() => dispatch(increment(1))}>
         {' '}
         Add the new values{' '}
       </button>
