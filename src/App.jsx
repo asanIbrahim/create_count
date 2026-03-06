@@ -1,6 +1,6 @@
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment } from './features/counter/counterSlice';
+import { decrement, increment } from './features/counter/counterSlice';
 
 function App() {
   const count = useSelector((state) => state.counter.count);
@@ -13,6 +13,10 @@ function App() {
       <button onClick={() => dispatch(increment(1))}>
         {' '}
         Add the new values{' '}
+      </button>
+      <button onClick={() => dispatch(decrement(1))}>
+        {' '}
+        Decrement the new values{' '}
       </button>
     </>
   );
